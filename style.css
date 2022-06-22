@@ -1,0 +1,900 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+input {
+  border-width: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; 
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+}
+sup {
+  font-size: 58.3%;
+  vertical-align: text-top;
+}
+sub {
+  font-size: 58.3%;
+  vertical-align: text-bottom;
+}
+.no-space-between-inline-blocks {
+  *letter-spacing: normal; 
+  letter-spacing: -0.31em; 
+  word-spacing: -0.43em; 
+}
+
+.no-space-between-inline-blocks > * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.displace {
+  left: -5000px;
+  position: absolute;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+body {
+  color: #ffffff;
+  font-family: Overpass, sans-serif;
+  font-size: 20.83334px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+body {
+  float: none;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  width: 100%; 
+}
+.background {
+  min-height: 8000px;
+  position: relative;
+  background: #e0e0e0 center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.image {
+  padding: 86px 0 52px;
+  position: relative;
+  width: 100%; 
+  background: url(images/place_your_image_here_dou_4.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.design {
+  min-height: 1110px;
+  padding: 26px 9.305555%; 
+  position: relative;
+  width: 100%; 
+  background: url(images/place_your_design_here_do_5.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.toolbar {
+  margin: 0 auto;
+  position: relative;
+  width: 99.317406%; 
+}
+.text {
+  float: left;
+  margin: 21px 0 0;
+  font-family: Chivo, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.menu {
+  float: left;
+  margin: 21px 0 0 4.123711%; 
+  font-family: Chivo, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.gallery {
+  float: left;
+  margin: 21px 0 0 4.209622%; 
+  font-family: Chivo, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.place-your-logo-here-double-click-to-edit {
+  float: left;
+  margin: 0 0 0 7.817869%; 
+  width: 160px;
+}
+.blog {
+  float: right;
+  margin: 21px 0 0;
+  font-family: Chivo, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.contact {
+  float: right;
+  margin: 21px 4.209622% 0 0; 
+  font-family: Chivo, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.bookings {
+  float: right;
+  margin: 21px 4.381444% 0 0; 
+  font-family: Chivo, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.tgline {
+  margin: 237px 0 0;
+  font-family: Chivo, sans-serif;
+  font-size: 47.89906px;
+  line-height: 1.2;
+  text-align: right;
+  text-transform: uppercase;
+}
+.subtitle {
+  margin: 18px 0 0;
+  color: #ffc901;
+  font-family: Chivo, sans-serif;
+  font-size: 37.5px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.place-your-logo-here-double-click-to-edit-2 {
+  display: block;
+  left: 35.537544%;
+  margin: 114px auto 0;
+  max-width: 321px;
+  position: relative;
+  width: 27.389078%; 
+}
+.subtitle-2 {
+  margin: 207px 0 0;
+  font-family: Chivo, sans-serif;
+  font-size: 52.59998px;
+  line-height: 56.08886px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.wrapper {
+  height: 6752px;
+  position: relative;
+  width: 100%; 
+}
+.image-2 {
+  left: 0;
+  min-height: 1151px;
+  padding: 102px 0;
+  position: absolute;
+  top: 5601px;
+  width: 100%; 
+  background: #1c1c1c;
+}
+.design-2 {
+  margin: 0 auto;
+  min-height: 573px;
+  padding: 77px 6.666667% 170px; 
+  position: relative;
+  width: 100%; 
+  background: url(images/place_your_design_here_do.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.title {
+  color: #ffc901;
+  font-family: Chivo, sans-serif;
+  font-size: 50.01617px;
+  font-weight: 300;
+  text-align: center;
+}
+.body-texts {
+  margin: 45px auto 0;
+  width: 48.23718%; 
+  font-size: 29.16666px;
+  font-weight: 200;
+  line-height: 35.0194px;
+  text-align: center;
+}
+.contact-2 {
+  margin: 45px 0 0;
+  color: #ffc901;
+  font-size: 41.66667px;
+  text-align: center;
+}
+.place-your-logo-here-double-click-to-edit-3 {
+  display: block;
+  margin: 79px auto 0;
+  max-width: 248px;
+  width: 17.222221%; 
+}
+.nav {
+  margin: 58px auto 0;
+  position: relative;
+  width: 57.916668%; 
+}
+.nav-list {
+  position: relative;
+  list-style: none;
+}
+.nav-list li {
+  float: left;
+  margin: 0 8.153478% 0 0; 
+}
+.nav-list li:last-child {
+  margin-right: 0;
+}
+.nav-item-1 {
+  color: #e7e6e6;
+  text-transform: uppercase;
+}
+.nav-item-1-2 {
+  color: #e7e6e6;
+  text-transform: uppercase;
+}
+.nav-item-1-3 {
+  color: #e7e6e6;
+  text-transform: uppercase;
+}
+.nav-item-1-4 {
+  color: #e7e6e6;
+  text-transform: uppercase;
+}
+.nav-item-1-5 {
+  color: #e7e6e6;
+  text-transform: uppercase;
+}
+.nav-item-1-6 {
+  color: #e7e6e6;
+  text-transform: uppercase;
+}
+.social-media-icons_group{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+.social-media-icons {
+  margin: 58px auto 0;
+  position: relative;
+  width: 17.98611%; 
+}
+.social-media-icons > * {
+  float: left;
+  margin: 0 9.65251% 0 0; 
+}
+.social-media-icons > *:last-child {
+  margin-right: 0 !important;
+}
+.vector-smart-object41-double-click-to-edit {
+  width: 46px;
+}
+.vector-smart-object51-double-click-to-edit {
+  width: 46px;
+}
+.vector-smart-object61-double-click-to-edit {
+  width: 46px;
+}
+.vector-smart-object71-double-click-to-edit {
+  width: 46px;
+}
+.group-7 {
+  height: 1139px;
+  left: 0;
+  position: absolute;
+  top: 4476px;
+  width: 100%; 
+}
+.image-3 {
+  height: 379px;
+  left: 0;
+  position: absolute;
+  top: 760px;
+  width: 100%; 
+  background: url(images/place_your_image_here_dou.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.place-your-design-here-double-click-to-edit {
+  left: 70.97222%;
+  max-width: 418px;
+  position: absolute;
+  top: 0;
+  width: 29.027779%; 
+}
+.text-2 {
+  left: 13.888889%;
+  position: absolute;
+  top: 767px;
+  width: 72.15278%; 
+  z-index: 0;
+}
+.text-3 {
+  position: relative;
+  z-index: 43;
+  color: #ffc901;
+  font-family: Chivo, sans-serif;
+  font-size: 121.36001px;
+  font-weight: bold;
+  text-align: center;
+}
+.body-text {
+  margin: -10px auto 0;
+  position: relative;
+  z-index: 42;
+  font-size: 27.306px;
+  font-weight: 300;
+  line-height: 48.544px;
+  text-align: center;
+}
+.name {
+  margin: 35px 0 0;
+  position: relative;
+  z-index: 41;
+  color: #ffc901;
+  font-family: Chivo, sans-serif;
+  font-size: 33.70722px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.group-6 {
+  left: 0;
+  position: absolute;
+  top: 4234px;
+  width: 100%; 
+}
+.image-4 {
+  height: 1007px;
+  position: relative;
+  width: 100%; 
+  background: url(images/place_your_image_here_dou_2.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.image-5 {
+  left: 0;
+  min-height: 1066px;
+  padding: 81px 0;
+  position: absolute;
+  top: 3172px;
+  width: 100%; 
+  background: url(images/place_your_image_here_dou_3.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.title-2 {
+  margin: 0 auto;
+  position: relative;
+  width: 36.319443%; 
+}
+.title-2 > * {
+  float: left;
+  margin: 0 10.191204% 0 0; 
+}
+.title-2 > *:last-child {
+  margin-right: 0 !important;
+}
+.shape {
+  width: 63px;
+  margin-top: 22px !important;
+}
+.title-3 {
+  font-family: Chivo, sans-serif;
+  font-size: 54.80494px;
+  text-transform: uppercase;
+}
+.shape-2 {
+  width: 63px;
+  margin-top: 22px !important;
+}
+.tagline {
+  margin: 73px 0 0;
+  font-size: 37.5px;
+  font-weight: 200;
+  text-align: center;
+}
+.row {
+  margin: 89px auto 0;
+  position: relative;
+  width: 74.72222%; 
+}
+.col-5 {
+  float: left;
+  position: relative;
+  width: 38.475838%; 
+}
+.title-4 {
+  font-size: 29.11602px;
+  font-weight: 200;
+}
+.rectangle-holder {
+  margin: 17px 0 0;
+  min-height: 56px;
+  padding: 0 5.555555%; 
+  position: relative;
+  width: 100%; 
+  border: 1px solid #ffc901; 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.subtitle-3 > * {
+  font-size: 18.74999px;
+  font-weight: 300;
+  line-height: 56px;
+}
+.title-5 {
+  margin: 70px 0 0;
+  font-size: 29.11602px;
+  font-weight: 200;
+}
+.rectangle-holder-2 {
+  margin: 16px 0 0;
+  min-height: 56px;
+  padding: 17px 5.797101%; 
+  position: relative;
+  width: 100%; 
+  border: 1px solid #ffc901; 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.shape-3 {
+  float: right;
+  margin: 4px 0.819672% 0 0; 
+  width: 17px;
+}
+.subtitle-4 {
+  margin: 0 0 0 0.241546%; 
+  font-size: 18.74999px;
+  font-weight: 300;
+}
+.col-6 {
+  float: right;
+  position: relative;
+  width: 38.475838%; 
+}
+.title-6 {
+  font-size: 29.11602px;
+  font-weight: 200;
+}
+.rectangle-holder-3 {
+  margin: 17px 0 0;
+  min-height: 56px;
+  padding: 0 5.555555%; 
+  position: relative;
+  width: 100%; 
+  border: 1px solid #ffc901; 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.subtitle-5 > * {
+  font-size: 18.74999px;
+  font-weight: 200;
+  line-height: 56px;
+}
+.title-7 {
+  margin: 68px 0 0;
+  font-size: 29.11602px;
+  font-weight: 200;
+}
+.rectangle-holder-4 {
+  margin: 17px 0 0;
+  min-height: 56px;
+  padding: 17px 5.555555%; 
+  width: 100%; 
+  border: 1px solid #ffc901; 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.vector-smart-object-double-click-to-edit {
+  float: right;
+  margin: 0 0.271739% 0 0; 
+  width: 20px;
+}
+.subtitle-6 {
+  margin: 0 0 0 0.241546%; 
+  font-size: 18.74999px;
+  font-weight: 300;
+}
+.row-2 {
+  margin: 88px auto 0;
+  position: relative;
+  width: 74.72222%; 
+}
+.col-7 {
+  float: left;
+  position: relative;
+  width: 38.475838%; 
+}
+.title-8 {
+  font-size: 29.11602px;
+  font-weight: 200;
+}
+.rectangle-holder-5 {
+  margin: 17px 0 0;
+  min-height: 56px;
+  padding: 17px 5.797101%; 
+  position: relative;
+  width: 100%; 
+  border: 1px solid #ffc901; 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.shape-4 {
+  float: right;
+  margin: 4px 1.092896% 0 0;
+  width: 16px;
+}
+.subtitle-7 {
+  margin: 0 0 0 0.241546%; 
+  font-size: 18.74999px;
+  font-weight: 300;
+}
+.col-8 {
+  float: right;
+  margin: 2px 0 0;
+  position: relative;
+  width: 38.475838%; 
+}
+.title-9 {
+  font-size: 29.11602px;
+  font-weight: 200;
+}
+.rectangle-holder-6 {
+  margin: 16px 0 0;
+  min-height: 56px;
+  padding: 0 5.555555%; 
+  position: relative;
+  width: 100%; 
+  border: 1px solid #ffc901; 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.subtitle-8 > * {
+  font-size: 18.74999px;
+  font-weight: 300;
+  line-height: 56px;
+}
+.vector-smart-object-double-click-to-edit-2 {
+  display: block;
+  margin: 98px auto 0;
+  max-width: 373px;
+  width: 25.902779%; 
+}
+.image-6 {
+  left: 0;
+  min-height: 1248px;
+  padding: 109px 0;
+  position: absolute;
+  top: 1930px;
+  width: 100%; 
+  background: url(images/place_your_image_here_dou_4.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.title-10 {
+  margin: 0 auto;
+  position: relative;
+  width: 34.930557%; 
+}
+.title-10 > * {
+  float: left;
+  margin: 0 13.578529% 0 0; 
+}
+.title-10 > *:last-child {
+  margin-right: 0 !important;
+}
+.shape-5 {
+  width: 63px;
+  margin-top: 22px !important;
+}
+.title-11 {
+  font-family: Chivo, sans-serif;
+  font-size: 54.80494px;
+  text-transform: uppercase;
+}
+.shape-6 {
+  width: 63px;
+  margin-top: 22px !important;
+}
+.place-your-design-here-double-click-to-edit-2 {
+  display: block;
+  margin: 103px auto 0;
+  max-width: 1256px;
+  width: 87.22222%; 
+}
+.image-7 {
+  height: 1248px;
+  left: 0;
+  position: absolute;
+  top: 686px;
+  width: 100%; 
+  background: url(images/place_your_image_here_dou_5.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.design-3 {
+  left: 3.333333%;
+  position: absolute;
+  top: 125px;
+  width: 50.34722%; 
+  z-index: 0;
+}
+.place-your-design-here-double-click-to-edit-3 {
+  display: block;
+  left: 4.62069%;
+  margin: 0 auto;
+  max-width: 658px;
+  position: relative;
+  width: 90.75862%; 
+  z-index: 117;
+}
+.ellipse {
+  display: block;
+  margin: -160px 0 0;
+  max-width: 694px;
+  position: relative;
+  width: 95.72414%; 
+  z-index: 116;
+}
+.text-4 {
+  left: 42.63889%;
+  position: absolute;
+  top: 474px;
+  width: 51.875%; 
+}
+.title-12 {
+  margin: 0 auto;
+  position: relative;
+  width: 96.117805%; 
+}
+.title-12 > * {
+  float: left;
+  margin: 0 5.571031% 0 0; 
+}
+.title-12 > *:last-child {
+  margin-right: 0 !important;
+}
+.shape-7 {
+  width: 63px;
+  margin-top: 20px !important;
+}
+.title-13 {
+  font-family: Chivo, sans-serif;
+  font-size: 54.80494px;
+  text-transform: uppercase;
+}
+.shape-8 {
+  width: 63px;
+  margin-top: 21px !important;
+}
+.body-text-2 {
+  margin: 102px auto 0;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 33.31219px;
+  text-align: center;
+}
+.title-14 {
+  margin: 99px auto 0;
+  width: 77.51004%; 
+  font-family: Chivo, sans-serif;
+  font-size: 54.7391px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 68.90685px;
+  text-transform: uppercase;
+}
+.subtitle-9 {
+  margin: 19px 0 0;
+  color: #ffc901;
+  font-size: 35.89814px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.image-8 {
+  left: 0;
+  padding: 119px 0;
+  position: absolute;
+  top: 0;
+  width: 100%; 
+  background: url(images/place_your_image_here_dou_6.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.text-5 {
+  margin: 0 auto;
+  position: relative;
+  right: 24.409721%;
+  width: 40.90278%; 
+}
+.title-15 {
+  margin: 0 auto;
+  position: relative;
+  width: 94.56706%; 
+}
+.title-15 > * {
+  float: left;
+  margin: 0 9.335727% 0 0; 
+}
+.title-15 > *:last-child {
+  margin-right: 0 !important;
+}
+.shape-9 {
+  width: 63px;
+  margin-top: 22px !important;
+}
+.title-16 {
+  font-family: Chivo, sans-serif;
+  font-size: 54.80494px;
+}
+.shape-10 {
+  width: 63px;
+  margin-top: 22px !important;
+}
+.body-text-3 {
+  margin: 99px auto 0;
+  font-weight: 300;
+  line-height: 33.31219px;
+  text-align: center;
+}
+.subtitle-10 {
+  margin: 112px 0 0;
+  font-size: 33.33334px;
+  font-weight: 300;
+  text-align: center;
+}
+.text-style-2 {
+  text-transform: uppercase;
+}
+.text-style-3 {
+  font-family: Atma, display;
+  text-transform: uppercase;
+}
+.text-style {
+  font-size: 67.61888px;
+}
+.colorffc901 {
+  color: #ffc901;
+}
+.font-atma {
+  font-family: Atma, display;
+}
